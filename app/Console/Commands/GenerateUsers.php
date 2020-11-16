@@ -28,9 +28,7 @@ class GenerateUsers extends Command
     private function generateCSV()
     {
         $fp = fopen($this->fileName, 'w');
-
         $this->writeUsersToCSV($fp);
-
         fclose($fp);
     }
 

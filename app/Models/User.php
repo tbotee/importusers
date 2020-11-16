@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Faker;
+use Illuminate\Support\Arr;
 
 class User extends Authenticatable
 {
@@ -43,13 +44,20 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    private static function getIsDeleted(): bool
+    {
+        $random = Arr::random(range(0,10));
+        return $random > 8;
+    }
+
     public static function getRandomUserForCSV(Faker\Generator $faker)
     {
         return array(
             $faker->name,
             $faker->safeEmail,
             $faker->password(6,10),
-            $faker->phoneNumber
+            $faker->phoneNumber,
+            User::getIsDeleted()
         );
     }
 }

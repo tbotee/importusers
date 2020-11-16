@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Laravel Setup&#10;User extended">
-      <change afterPath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Random user generator added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -186,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605550394362</updated>
       <workItem from="1605550395405" duration="4045000" />
-      <workItem from="1605555823472" duration="4721000" />
+      <workItem from="1605555823472" duration="5650000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel Setup&#10;User extended">
       <created>1605554343435</created>
@@ -195,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605554343435</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Random user generator added">
+      <created>1605560643716</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605560643716</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,7 +220,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Laravel Setup&#10;User extended" />
-    <option name="LAST_COMMIT_MESSAGE" value="Laravel Setup&#10;User extended" />
+    <MESSAGE value="Random user generator added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Random user generator added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605559678470">
@@ -254,10 +260,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="872" y="420" key="Vcs.Push.Dialog.v2" timestamp="1605554372294">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605560651105">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="420" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605554372294" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605560651105" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
