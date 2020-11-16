@@ -1,15 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Laravel Setup&#10;User extended">
+      <change afterPath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/tbotee/importusers" />
+      </set>
+    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,15 +155,20 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kNoQY6xru6hn6P5KSNyGNXQeJG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.composer" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -146,29 +185,82 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605550394362</updated>
-      <workItem from="1605550395405" duration="2375000" />
+      <workItem from="1605550395405" duration="4045000" />
+      <workItem from="1605555823472" duration="4721000" />
     </task>
+    <task id="LOCAL-00001" summary="Laravel Setup&#10;User extended">
+      <created>1605554343435</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605554343435</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Laravel Setup&#10;User extended" />
+    <option name="LAST_COMMIT_MESSAGE" value="Laravel Setup&#10;User extended" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605552383816">
+    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605559678470">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605552383816" />
-    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605552383816">
+    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605559678470" />
+    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1605560067862">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605552383816" />
-    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605552383815">
+    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605560067862" />
+    <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1605554281342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605552383815" />
-    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605552383816">
+    <state x="1060" y="441" key="FileChooserDialogImpl/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605554281342" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1605555804305">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605552383816" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555804305" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1605555804305">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555804305" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1605555804305">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555804305" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1605555804305">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555804305" />
+    <state x="1084" y="402" key="RollbackChangesDialog" timestamp="1605559915229">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1084" y="402" key="RollbackChangesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605559915229" />
+    <state x="781" y="345" key="SettingsEditor" timestamp="1605555987866">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2" timestamp="1605554372294">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="420" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605554372294" />
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605556721381" />
   </component>
 </project>
