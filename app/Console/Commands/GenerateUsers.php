@@ -9,8 +9,9 @@ use App\Models\User;
 class GenerateUsers extends Command
 {
 
-    private $nrOfUsers  = 100000;
+    private $nrOfUsers  = 10;
     private $fileName   = 'userList.csv';
+    private $columns = array('name', 'email', 'password', 'phone', 'deleted');
 
     protected $signature = 'command:generate_users';
     protected $description = 'Generates 100k users and exports them into a csv file';
@@ -35,6 +36,7 @@ class GenerateUsers extends Command
     private function writeUsersToCSV($fp): void
     {
         $faker = Faker::create();
+        fputcsv($fp, $this->columns);
         foreach (range(1, $this->nrOfUsers) as $nr) {
             fputcsv($fp, User::getRandomUserForCSV($faker));
         }
