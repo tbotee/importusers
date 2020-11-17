@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Config;
 class GenerateUsers extends Command
 {
 
-    private $nrOfUsers  = 10;
+    private $nrOfUsers  = 100000;
     private $fileName;
     private $columns = array('name', 'email', 'password', 'phone', 'deleted');
 
