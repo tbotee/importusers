@@ -5,12 +5,13 @@ namespace App\Console\Commands;
 use Faker\Factory as Faker;
 use Illuminate\Console\Command;
 use App\Models\User;
+use Illuminate\Support\Facades\Config;
 
 class GenerateUsers extends Command
 {
 
     private $nrOfUsers  = 10;
-    private $fileName   = 'userList.csv';
+    private $fileName;
     private $columns = array('name', 'email', 'password', 'phone', 'deleted');
 
     protected $signature = 'command:generate_users';
@@ -19,6 +20,7 @@ class GenerateUsers extends Command
     public function __construct()
     {
         parent::__construct();
+        $this->fileName = Config::get('constants.fileOptions.name');
     }
 
     public function handle()

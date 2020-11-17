@@ -8,6 +8,7 @@ use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Faker;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\Hash;
 
 class User extends Authenticatable
 {
@@ -47,7 +48,7 @@ class User extends Authenticatable
     private static function getIsDeleted(): bool
     {
         $random = Arr::random(range(0,10));
-        return $random > 8;
+        return $random > 7;
     }
 
     public static function getRandomUserForCSV(Faker\Generator $faker)
@@ -59,5 +60,27 @@ class User extends Authenticatable
             $faker->phoneNumber,
             User::getIsDeleted()
         );
+    }
+
+    /**
+     * @param $userRow
+     */
+    public function puplateUserModel($userRow): void
+    {
+        $this->name = $userRow[0];
+        $this->email = $userRow[1];
+        $this->password = $userRow[2];
+        $this->phone = $userRow[3];
+        $this->deleted_at = $this->getDeletedAt($userRow[4]);
+    }
+
+    private function getDeletedAt($deleted)
+    {
+        return $deleted ? now() : null;
+    }
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = Hash::make($value);
     }
 }

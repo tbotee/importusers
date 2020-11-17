@@ -19,9 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Added column headers">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_17_055312_create_jobs_table.php" afterDir="false" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Created jobs migration">
+      <change afterPath="$PROJECT_DIR$/app/Jobs/ImportUser.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/constants.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -206,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605561512899</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Created jobs migration">
+      <created>1605593030140</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605593030140</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,17 +240,22 @@
     <MESSAGE value="Laravel Setup&#10;User extended" />
     <MESSAGE value="Random user generator added" />
     <MESSAGE value="Added deleted column into CSV file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added deleted column into CSV file" />
+    <MESSAGE value="Created jobs migration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created jobs migration" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605559678470">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605604166487">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605559678470" />
-    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1605560067862">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605604166487" />
+    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605604106959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605560067862" />
+    <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605604106959" />
+    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1605602230118">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605602230118" />
     <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1605554281342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -259,18 +276,18 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555804305" />
-    <state x="1084" y="402" key="RollbackChangesDialog" timestamp="1605559915229">
+    <state x="1084" y="402" key="RollbackChangesDialog" timestamp="1605603493301">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1084" y="402" key="RollbackChangesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605559915229" />
+    <state x="1084" y="402" key="RollbackChangesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605603493301" />
     <state x="781" y="345" key="SettingsEditor" timestamp="1605555987866">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605561521173">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605593032290">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605561521173" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605593032290" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

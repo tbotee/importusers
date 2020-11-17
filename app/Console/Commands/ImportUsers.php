@@ -2,10 +2,18 @@
 
 namespace App\Console\Commands;
 
+use App\Jobs\ImportUser;
+use Illuminate\Bus\Queueable;
 use Illuminate\Console\Command;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Config;
 
 class ImportUsers extends Command
 {
+    use Queueable, SerializesModels;
+
+    private $fileName;
+
     /**
      * The name and signature of the console command.
      *
@@ -18,7 +26,7 @@ class ImportUsers extends Command
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Imports users from tfile and puts in to queue';
 
     /**
      * Create a new command instance.
@@ -28,6 +36,7 @@ class ImportUsers extends Command
     public function __construct()
     {
         parent::__construct();
+        $this->fileName = Config::get('constants.fileOptions.name');
     }
 
     /**
@@ -37,6 +46,17 @@ class ImportUsers extends Command
      */
     public function handle()
     {
-        return 0;
+        foreach ($this->loadUsersFromSCV() as $user)
+        {
+            $insertJob = (new ImportUser($user));
+            dispatch($insertJob);
+        }
     }
+
+    private function loadUsersFromSCV()
+    {
+        $csv = array_map('str_getcsv', file($this->fileName));
+        return array_slice($csv, 1);
+    }
+
 }
