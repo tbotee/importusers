@@ -63,7 +63,7 @@ class User extends Authenticatable
     }
 
     /**
-     * @param $userRow
+     * @param $user
      */
     public function puplateUserModel($userRow): void
     {

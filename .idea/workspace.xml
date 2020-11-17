@@ -19,8 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Import finished&#10;Ques finished&#10;readme updated">
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/GenerateUsers.php" afterDir="false" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Importer test created">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ImporterTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605605273321</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="nr of users set to 100k">
+      <created>1605606954630</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605606954630</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,9 +255,15 @@
     <MESSAGE value="Added deleted column into CSV file" />
     <MESSAGE value="Created jobs migration" />
     <MESSAGE value="Import finished&#10;Ques finished&#10;readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Import finished&#10;Ques finished&#10;readme updated" />
+    <MESSAGE value="nr of users set to 100k" />
+    <MESSAGE value="Importer test created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Importer test created" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605608678065">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605608678065" />
     <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605604166487">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -286,13 +304,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605605274990">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605606956419">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605605274990" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605606956419" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605556721381" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605607541137">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605607541137" />
   </component>
 </project>
