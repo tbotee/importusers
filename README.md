@@ -1,5 +1,8 @@
 ## Setup
 * Download source from GIT, Master branch
+* Install dependencies 
+    * composer install
+    * npm install
 * Use the following commands for setting Homestead and vagrant
     * composer require laravel/homestead --dev
     * php vendor/bin/homestead make
