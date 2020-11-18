@@ -33,7 +33,10 @@ class ImportUser implements ShouldQueue
      */
     public function handle()
     {
-        $this->createUserInDatabase();
+        if ($this->userRow[1])
+        {
+            $this->createUserInDatabase();
+        }
     }
 
     public function createUserInDatabase() : int

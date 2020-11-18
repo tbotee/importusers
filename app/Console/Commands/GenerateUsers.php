@@ -6,11 +6,12 @@ use Faker\Factory as Faker;
 use Illuminate\Console\Command;
 use App\Models\User;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Storage;
 
 class GenerateUsers extends Command
 {
 
-    private $nrOfUsers  = 100000;
+    private $nrOfUsers  = 10;
     private $fileName;
     private $columns = array('name', 'email', 'password', 'phone', 'deleted');
 
@@ -37,10 +38,26 @@ class GenerateUsers extends Command
 
     private function writeUsersToCSV($fp): void
     {
-        $faker = Faker::create();
-        fputcsv($fp, $this->columns);
+        $this->writeColumnHeaders();
+        $this->writeUserRows(Faker::create());
+    }
+
+    private function writeUserRows($faker)
+    {
+        $userRows = '';
         foreach (range(1, $this->nrOfUsers) as $nr) {
-            fputcsv($fp, User::getRandomUserForCSV($faker));
+            $userRows .= ($nr === 1 ? "" : "\n") . $this->getCSVString(User::getRandomUserForCSV($faker));
         }
+        Storage::disk('public')->append($this->fileName, $userRows);
+    }
+
+    private function writeColumnHeaders()
+    {
+        Storage::disk('public')->put($this->fileName, $this->getCSVString($this->columns));
+    }
+
+    private function getCSVString($list)
+    {
+        return '"'.implode('","', $list) . '"';
     }
 }

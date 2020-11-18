@@ -7,6 +7,7 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Console\Command;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Config;
+use Illuminate\Support\Facades\Storage;
 
 class ImportUsers extends Command
 {
@@ -46,7 +47,7 @@ class ImportUsers extends Command
      */
     public function handle()
     {
-        if (!file_exists($this->fileName))
+        if (!Storage::disk('public')->exists($this->fileName))
         {
             echo "\nImport file {$this->fileName} does not exists, please run 'php artisan command:generate_users'\n";
             return;
@@ -57,7 +58,7 @@ class ImportUsers extends Command
 
     private function loadUsersFromSCV()
     {
-        $csv = array_map('str_getcsv', file($this->fileName));
+        $csv = array_map('str_getcsv', explode("\n", $this->getFileContent()));
         return array_slice($csv, 1);
     }
 
@@ -67,6 +68,15 @@ class ImportUsers extends Command
             $insertJob = (new ImportUser($user));
             dispatch($insertJob);
         }
+    }
+
+    /**
+     * @return string
+     * @throws \Illuminate\Contracts\Filesystem\FileNotFoundException
+     */
+    private function getFileContent(): string
+    {
+        return Storage::disk('public')->get($this->fileName);
     }
 
 }

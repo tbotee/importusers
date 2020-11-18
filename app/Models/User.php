@@ -56,7 +56,7 @@ class User extends Authenticatable
         return array(
             $faker->name,
             $faker->safeEmail,
-            $faker->password(6,10),
+            $faker->randomNumber(5),
             $faker->phoneNumber,
             User::getIsDeleted()
         );
