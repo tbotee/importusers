@@ -19,8 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Readme updated">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="readme updated">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +185,7 @@
       <updated>1605550394362</updated>
       <workItem from="1605550395405" duration="4045000" />
       <workItem from="1605555823472" duration="6740000" />
-      <workItem from="1605694068844" duration="4007000" />
+      <workItem from="1605694068844" duration="4077000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel Setup&#10;User extended">
       <created>1605554343435</created>
@@ -264,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605698033043</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="readme updated">
+      <created>1605698104404</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605698104404</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,7 +302,8 @@
     <MESSAGE value="added test to worker" />
     <MESSAGE value="code refactoring" />
     <MESSAGE value="Readme updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme updated" />
+    <MESSAGE value="readme updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605608678065">
@@ -342,10 +350,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605698034873">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605698108706">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605698034873" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605698108706" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
