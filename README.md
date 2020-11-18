@@ -9,6 +9,8 @@ php artisan command:import_users
 ## Run the worker
 php artisan queue:work
 
+## Run tests
+php artisan test
 
 ## License
 

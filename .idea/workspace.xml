@@ -19,11 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Importer test created">
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Typo fixed">
+      <change afterPath="$PROJECT_DIR$/tests/Unit/WorkerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/importusers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/importusers.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Jobs/ImportUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/ImportUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/ImporterTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/ImporterTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +156,8 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
       <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
       <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/laravel/homestead" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
     </include_path>
   </component>
   <component name="ProjectId" id="1kNoQY6xru6hn6P5KSNyGNXQeJG" />
@@ -186,6 +193,7 @@
       <updated>1605550394362</updated>
       <workItem from="1605550395405" duration="4045000" />
       <workItem from="1605555823472" duration="6740000" />
+      <workItem from="1605694068844" duration="2750000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel Setup&#10;User extended">
       <created>1605554343435</created>
@@ -236,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605643865462</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Typo fixed">
+      <created>1605690273431</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605690273431</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +267,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -262,25 +278,26 @@
     <MESSAGE value="Import finished&#10;Ques finished&#10;readme updated" />
     <MESSAGE value="nr of users set to 100k" />
     <MESSAGE value="Importer test created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Importer test created" />
+    <MESSAGE value="Typo fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Typo fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605608678065">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605608678065" />
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605604166487">
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605695095252">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605604166487" />
+    <state x="1010" y="447" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605695095252" />
     <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605604106959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1010" y="455" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605604106959" />
-    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1605602230118">
+    <state x="1617" y="421" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0" timestamp="1605694889723">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1099" y="474" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605602230118" />
+    <state x="1617" y="421" key="#com.jetbrains.php.refactoring.extractMethod.PhpExtractMethodDialog#method0/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605694889723" />
     <state x="1060" y="441" key="FileChooserDialogImpl" timestamp="1605554281342">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -309,10 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605643871702">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605690278085">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605643871702" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605690278085" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

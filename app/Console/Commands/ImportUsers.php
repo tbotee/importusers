@@ -46,17 +46,27 @@ class ImportUsers extends Command
      */
     public function handle()
     {
-        foreach ($this->loadUsersFromSCV() as $user)
+        if (!file_exists($this->fileName))
         {
-            $insertJob = (new ImportUser($user));
-            dispatch($insertJob);
+            echo "\nImport file {$this->fileName} does not exists, please run 'php artisan command:generate_users'\n";
+            return;
         }
+
+        $this->addUsersToQueue();
     }
 
     private function loadUsersFromSCV()
     {
         $csv = array_map('str_getcsv', file($this->fileName));
         return array_slice($csv, 1);
+    }
+
+    private function addUsersToQueue(): void
+    {
+        foreach ($this->loadUsersFromSCV() as $user) {
+            $insertJob = (new ImportUser($user));
+            dispatch($insertJob);
+        }
     }
 
 }
