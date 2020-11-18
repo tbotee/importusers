@@ -34,7 +34,7 @@ class ImportUser implements ShouldQueue
     public function handle()
     {
         $user = new User();
-        $user->puplateUserModel($this->userRow);
+        $user->populateUserModel($this->userRow);
         $user->save();
     }
 

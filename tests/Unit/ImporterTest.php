@@ -21,21 +21,21 @@ class ImporterTest extends TestCase
     public function test_undeleted_user_should_set_on_deleted_at_to_null()
     {
         $user = User::factory()->make();
-        $user->puplateUserModel($this->getDeletedUser());
+        $user->populateUserModel($this->getDeletedUser());
         $this->assertEquals(null, $user->deleted_at);
     }
 
     public function test_imported_user_without_deleted_flag_should_set_on_deleted_at_to_current_date()
     {
         $user = User::factory()->make();
-        $user->puplateUserModel($this->getUser());
+        $user->populateUserModel($this->getUser());
         $this->assertTrue($user->deleted_at != null);
     }
 
     public function test_imported_password_gets_hashed()
     {
         $user = User::factory()->make();
-        $user->puplateUserModel($this->getUser());
+        $user->populateUserModel($this->getUser());
         $this->assertTrue(substr( $user->password, 0, 7 ) === "$2y$04$");
     }
 

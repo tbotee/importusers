@@ -65,7 +65,7 @@ class User extends Authenticatable
     /**
      * @param $user
      */
-    public function puplateUserModel($userRow): void
+    public function populateUserModel($userRow): void
     {
         $this->name = $userRow[0];
         $this->email = $userRow[1];
