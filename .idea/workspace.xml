@@ -19,16 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="Typo fixed">
-      <change afterPath="$PROJECT_DIR$/tests/Unit/WorkerTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/importusers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/importusers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="10ff570a-2198-45c7-b5ea-3e4f5f0d3e3a" name="Default Changelist" comment="added test to worker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ImportUsers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Jobs/ImportUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Jobs/ImportUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +185,7 @@
       <updated>1605550394362</updated>
       <workItem from="1605550395405" duration="4045000" />
       <workItem from="1605555823472" duration="6740000" />
-      <workItem from="1605694068844" duration="2750000" />
+      <workItem from="1605694068844" duration="3070000" />
     </task>
     <task id="LOCAL-00001" summary="Laravel Setup&#10;User extended">
       <created>1605554343435</created>
@@ -251,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605690273431</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added test to worker">
+      <created>1605697084218</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605697084218</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -279,7 +278,8 @@
     <MESSAGE value="nr of users set to 100k" />
     <MESSAGE value="Importer test created" />
     <MESSAGE value="Typo fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Typo fixed" />
+    <MESSAGE value="added test to worker" />
+    <option name="LAST_COMMIT_MESSAGE" value="added test to worker" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1041" y="360" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1605608678065">
@@ -326,10 +326,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="781" y="345" key="SettingsEditor/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605555987866" />
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605690278085">
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2" timestamp="1605697087291">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605690278085" />
+    <state x="1062" y="331" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-2560.0.2560.1400@0.0.2560.1400" timestamp="1605697087291" />
     <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1605556721381">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
